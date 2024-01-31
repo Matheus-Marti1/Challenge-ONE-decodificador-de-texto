@@ -9,14 +9,13 @@
 </head>
 <body>
     <main class="main container">
-        <header class="cabecalho">
+        <header class="header">
             <img src="images/Logo.svg" alt="logo">
 
         </header>
         <div class="container-input">
             <div class="input">
-                <textarea id="input-text" placeholder="Digite seu texto"></textarea>
-                <p>Apenas letras minúsculas e sem acento.</p>
+                <textarea autocomplete="off" id="input-text" placeholder="Digite seu texto"></textarea>
             </div>
             <div id="output">
                 <img src="images/output.svg" alt="">
@@ -26,17 +25,19 @@
 
        <div class="buttons">
             <div class="container-btn">
-                <button class="btn-criptografar">Criptografar</button>
-                <button class="btn-descriptografar">Descriptografar</button>
+                <p>Apenas letras minúsculas e sem acento.</p>
+                <button onclick="encryptText()" class="btn-encrypt">Criptografar</button>
+                <button onclick="decryptText()" class="btn-decrypt">Descriptografar</button>
             </div>            
        </div> 
     </main>
 
-    <footer class="rodape">
+    <footer class="footer">
         <div class="icons">
             <a href="https://github.com/Matheus-Marti1"><ion-icon name="logo-github"></ion-icon></a>
             <a href="https://www.linkedin.com/in/matheusmarti/"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
+        <h3>Desenvolvido por Matheus Marti</h3>
     </footer>
 
     <script src="scripts/app.js"></script>
