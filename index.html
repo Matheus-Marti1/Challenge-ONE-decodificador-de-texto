@@ -8,37 +8,42 @@
     <link rel="shortcut icon" href="images/Logo.svg" type="image/x-icon">
 </head>
 <body>
-    <main class="main container">
-        <header class="header">
-            <img src="images/Logo.svg" alt="logo">
-
-        </header>
-        <div class="container-input">
+    <header>
+        <img class="logo" src="images/Logo.svg" alt="logo">
+    </header>
+    <main>
+        <section id="input-section">
             <div class="input">
                 <textarea autocomplete="off" id="input-text" placeholder="Digite seu texto"></textarea>
             </div>
-            <div id="output">
-                <img src="images/output.svg" alt="">
-                <h2>Nenhuma mensagem encontrada</h2>
-                <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
-        </div>
-
-       <div class="buttons">
-            <div class="container-btn">
+            <div class="rule-text">
+                <img src="images/Exclamation.svg" alt="exclamação">
                 <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="container-btn">
                 <button onclick="encryptText()" class="btn-encrypt">Criptografar</button>
                 <button onclick="decryptText()" class="btn-decrypt">Descriptografar</button>
-            </div>            
-       </div> 
+            </div>
+        </section>
+        <section id="output-section">  
+            <div class="output-image">
+                <img src="images/output.svg" alt="Menino com uma lupa">
+            </div>
+                <div class="output-info">
+                    <h3>Nenhuma mensagem encontrada</h3>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+        
+        </section>
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="icons">
-            <a href="https://github.com/Matheus-Marti1"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="https://www.linkedin.com/in/matheusmarti/"><ion-icon name="logo-linkedin"></ion-icon></a>
-        </div>
+        <a href="https://github.com/Matheus-Marti1"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/matheusmarti/"><ion-icon name="logo-linkedin"></ion-icon></a>
+    </div>
         <h3>Desenvolvido por Matheus Marti</h3>
-    </footer>
+     </footer>
 
     <script src="scripts/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
