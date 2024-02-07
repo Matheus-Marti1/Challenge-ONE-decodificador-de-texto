@@ -6,7 +6,7 @@ function encryptText() {
     
     var resultEncrypt = text.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
 
-    document.getElementById('output-section').innerHTML = '<div class="container-copy-btn"><button class="btn-copy-text" id="copy" onclick="copyText()">Copiar</button></div>' + '<div class="container-result"><p id="output-text">' + resultEncrypt + '</p>';
+    document.getElementById('output-section').innerHTML = '<div class="container-copy-btn"><button class="btn-copy-text" id="copy" onclick="copyText()">Copiar</button></div>' + '<div class="container-result"><p id="output-text">' + resultEncrypt + '</p></div>';
 }
 
 function decryptText() {
@@ -14,7 +14,7 @@ function decryptText() {
 
     var resultDecrypt = text.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
 
-    document.getElementById('output-section').innerHTML = '<div class="container-copy-btn"><button class="btn-copy-text" id="copy" onclick="copyText()">Copiar</button></div>' + '<div class="container-result"><p id="output-text">' + resultDecrypt + '</p>';
+    document.getElementById('output-section').innerHTML = '<div class="container-copy-btn"><button class="btn-copy-text" id="copy" onclick="copyText()">Copiar</button></div>' + '<div class="container-result"><p id="output-text">' + resultDecrypt + '</p></div>';
 }
 
 function copyText() {
