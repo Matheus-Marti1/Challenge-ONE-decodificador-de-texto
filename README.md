@@ -17,4 +17,7 @@ O desafio propõe em fazer um decodificador e codificador de texto em Javascript
 - CSS
 - Javascript
 
+## Utilização
+Acesse o site através da página no GitHub Pages [aqui](https://matheus-marti1.github.io/Challenge-ONE-decodificador-de-texto/), ou clone o repositório no seu dispositivo e abra o index.html para usar o site localmente.
+
 
